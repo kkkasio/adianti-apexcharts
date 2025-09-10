@@ -1,0 +1,31 @@
+{
+  "name": "kasio/adianti-apexcharts",
+  "description": "Adaptador ApexCharts para o framework Adianti.",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Kásio Eduardo",
+      "email": "kasioeduado13@gmail.com"
+    }
+  ],
+  "keywords": [
+    "adianti",
+    "apexcharts",
+    "charts",
+    "graficos",
+    "dashboard"
+  ],
+  "require": {
+    "php": ">=8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Adianti\\Kasio\\": "src/kasio/"
+    }
+  },
+  "scripts": {},
+  "support": {
+    "issues": "https://github.com/kkkasio/adianti-apexcharts/issues"
+  }
+}
