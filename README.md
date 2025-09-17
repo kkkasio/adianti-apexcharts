@@ -68,7 +68,7 @@ $chart2->setConfig([
 
 Você deve usar a classe _JsExpression_ para adaptar as funções JS.
 
-````php
+```php
 $chart = new ApexChartContainer('line');
     $chart->setTitle('Receita Anual');
     $chart->setCategories(['Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun']);
@@ -88,10 +88,12 @@ $chart = new ApexChartContainer('line');
 ### 🎨 Layouts
 
 ```php
-$row = new ApexChartRow();
-$row->addChart($chart);
-$row->addChart($chart2);
-$row->show();
+$row = ChartLayouts::single(); //col 12 (1 chart)
+
+$row = ChartLayouts::double(); // col 6 (2 chats)
+
+$row = ChartLayouts::triple(); // col 3  (3 charts)
+
+$row = ChartLayouts::dashboard(); //col 4 (4 charts)
 
 ```
-````
